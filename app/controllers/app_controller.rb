@@ -1,3 +1,7 @@
+$LOAD_PATH << './lib'
+$LOAD_PATH << './app/controllers'
+$LOAD_PATH << './app/models'
+
 require 'sinatra/base'
 require 'game'
 require 'rps_extended'
