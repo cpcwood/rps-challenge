@@ -10,7 +10,7 @@
 
 ```
 -------
-### Outline
+## Outline
 
 Makers Academy weekend challenge to create a simple webapp using Ruby Sinatra, allowing a user to play Rock Paper Scissors Spock Lizard against an opponent or computer.
 
@@ -22,6 +22,8 @@ The webapp has been developed on Ruby Sinatra, a rack based platform, so to inst
 - RVM (follow instructions [here](https://rvm.io/rvm/install))
 - Ruby 2.6.5 (```rvm install 2.6.5```)
 - Bundler 2+ (```gem install bundler```)
+
+### Install Application
 
 Then clone or download this repository, move to root directory and run ```bundle install``` to install the application for all environments. 
 
