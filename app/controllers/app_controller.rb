@@ -51,7 +51,4 @@ class RPSApp < Sinatra::Base
   before do
     @game = Game.game_instance
   end
-
-  # start the server if ruby file executed directly
-  run! if $0 == __FILE__
 end

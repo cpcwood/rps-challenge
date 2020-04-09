@@ -21,19 +21,21 @@ GEM
     mini_portile2 (2.4.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.2)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     parallel (1.19.1)
     parser (2.7.0.1)
       ast (~> 2.4.0)
     public_suffix (4.0.3)
+    puma (4.3.3)
+      nio4r (~> 2.0)
     rack (2.0.8)
     rack-protection (2.0.8.1)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
-    rake (13.0.1)
     regexp_parser (1.6.0)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
@@ -83,7 +85,8 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  rake
+  puma
+  rack
   rspec
   rubocop
   simplecov

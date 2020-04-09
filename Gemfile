@@ -2,10 +2,14 @@ ruby '2.6.5'
 
 source 'https://rubygems.org'
 
-gem 'rake'
-gem 'capybara'
+gem 'rack'
 gem 'sinatra'
-gem 'rspec'
-gem 'rubocop'
-gem 'simplecov'
-gem 'simplecov-console'
+gem 'puma'
+
+group :development, :test do
+  gem 'rspec'
+  gem 'rubocop'
+  gem 'simplecov'
+  gem 'simplecov-console'
+  gem 'capybara'
+end

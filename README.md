@@ -12,11 +12,36 @@
 -------
 ### Outline
 
-Makers Academy weekend challenge to create a simple webapp using Sinatra, allowing a user to play Rock Paper Scissors Spock Lizard against an opponent or computer.
+Makers Academy weekend challenge to create a simple webapp using Ruby Sinatra, allowing a user to play Rock Paper Scissors Spock Lizard against an opponent or computer.
 
-### How to Install
+## How to Install
 
-The webapp has been developed on Sinatra, a rack based platform, so to install clone this repo, move to root directory, run bundle command, and use the rackup command (or other rackup application) in the root directory to start the application running on the local host.
+### Prerequisites
+
+The webapp has been developed on Ruby Sinatra, a rack based platform, so to install make sure you have the following installed:
+- RVM (follow instructions [here](https://rvm.io/rvm/install))
+- Ruby 2.6.5 (```rvm install 2.6.5```)
+- Bundler 2+ (```gem install bundler```)
+
+Then clone or download this repository, move to root directory and run ```bundle install``` to install the application for all environments. 
+
+### How to Run the Tests
+
+After install, to check the application is working correctly navigate to the root directory and run the tests using the following command:
+```bash
+rspec
+```
+
+### How to Start the Server
+
+The default application server is Puma. The application is currently configured to listen for requests on a unix socket ```shared/sockets/puma.sock```. To change this to listen on the localhost, edit the puma configuration file ```config/puma.rb```, commenting out the line starting with ```bind ...``` and un-commenting the line starting with ```port ...```, selecting the port you wish to host on.
+
+To start the server, navigate to the root directory and run the following command:
+```bash
+puma
+```
+
+## Application Design Process
 
 ### Customer Requirements
 #### Base requirements
@@ -80,3 +105,8 @@ Using customer requirements and
 - Refactor multiplayer to use standard views
 - Refactor result to return each players move
 - Cleanup tests (make sure each feature is tested)
+
+
+## License
+
+This application is distributed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License

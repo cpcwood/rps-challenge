@@ -1,7 +1,5 @@
-$LOAD_PATH << './lib'
-$LOAD_PATH << './app/controllers'
-$LOAD_PATH << './app/models'
+ENV['RACK_ENV'] = ENV.fetch('RACK_ENV', 'production')
 
-require 'app_controller'
+require './app/controllers/app_controller'
 
 run RPSApp
